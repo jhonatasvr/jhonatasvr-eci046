@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#"
+     xml:base="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#ensina -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#ensina">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#estuda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#estuda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Estudante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Estudante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Gestão -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Gestão">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Ontologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Ontologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Anastácio_de_Paula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Anastácio_de_Paula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Professor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Contato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Contato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Código -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Código">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#ECI_046 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#ECI_046">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Ontologia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Endereço -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Endereço">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Jhônatas_Ventura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Jhônatas_Ventura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Estudante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Juriscleide_da_Silva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Juriscleide_da_Silva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Estudante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Nome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Nome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Pessoa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Renato_Fabiano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Renato_Fabiano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Professor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Semestre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Semestre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Disciplina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#TGI_058 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#TGI_058">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Gestão"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#2017_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#2017_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Gestão"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#2018_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#2018_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonatasvr/ontologies/2018/8/universidade.owl#Ontologia"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
